@@ -91,3 +91,826 @@ src="https://www.facebook.com/tr?id=749485689488313&ev=AddPaymentInfo&noscript=1
     <script src="./assets/js/com.js"></script>
   </body>
 </html>
+
+
+
+
+
+
+
+
+          <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Montserrat&family=Open+Sans&family=Oswald&display=swap" rel="stylesheet" />
+  <style>
+  .fb-comments{
+      background-color: white!important;
+     border:1px solid #e9ebee!important
+  }
+ table th {
+      padding: 2px !important;
+  }
+  td, table tbody tr{
+      background-color: #fff!important;
+  }
+    @media (max-width: 768px) {
+  .video-player {
+    width: 100%;
+    background: 0 0;
+  }
+  .video-player iframe {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    margin: auto;
+  }
+  #frame {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    margin: auto;
+  }
+}
+
+* {
+  font-family: helvetica, arial, sans-serif;
+}
+
+body {
+  font-size: 16px;
+}
+.mark-comments{
+  color: #365899;
+}
+.fb-comments {
+  border: 1px solid #e9ebee!important;
+  border-radius: 18px;
+  padding: 12px;
+  margin: auto;
+  position: relative;
+  color: #4267b2;
+}
+
+.fb-comments-header {
+  padding:  0;
+  border-bottom: 1px solid #e9ebee!important;
+}
+
+.fb-comments-header span {
+  color: #000;
+  font-weight: 700;
+  font-size: 0.9em;
+}
+
+.fb-comments-comment {
+  border: none!important;
+  padding: 0;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.fb-comments-reply-wrapper {
+  margin-left: 60px;
+  border-left: 1px dotted #e9ebee!important;
+  padding-left: 5px;
+}
+
+tr,
+td {
+  border: none!important;
+  margin: 0;
+}
+
+td {
+  padding: 2.5px;
+}
+
+tr {
+  padding: 2.5px 0;
+}
+
+.fb-comments-comment-img {
+  vertical-align: top;
+  width: 48px;
+  padding-right: 5px;
+}
+
+.fb-comments-comment-img img {
+    max-width: 48px;
+    max-height: 48px;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+.fb-comments-comment-name {
+  font-size: 0.85em;
+}
+
+.fb-comments-comment-name name {
+  color: #365899;
+  text-decoration: none!important;
+  font-weight: 700;
+  cursor: pointer;
+  cursor: hand;
+}
+
+.fb-comments-comment-name name:hover {
+  text-decoration: underline!important;
+}
+
+.fb-comments-comment-name occupation {
+  color: #90949c!important;
+}
+
+.fb-comments-comment-text {
+font-weight: 300;
+  font-size: 0.9em;
+  color: #000;
+  border-radius: 21px;
+  background-color: #eaebef!important;
+  padding-left: 12px
+}
+.fb-comments-comment-actions{
+    padding: 0 2px !important;
+}
+.fb-comments-comment-actions like,
+.fb-comments-comment-actions reply {
+  font-size: 0.75em;
+  color: #4267b2;
+  text-decoration: none!important;
+  cursor: pointer;
+  cursor: hand;
+}
+
+.fb-comments-comment-actions like.liked {
+  color: #90949c;
+}
+
+.fb-comments-comment-actions like:hover,
+.fb-comments-comment-actions reply:hover {
+  text-decoration: underline;
+}
+
+.fb-comments-comment-actions likes {
+  font-size: 13px;
+  background: url(https://kitsecamuito.online/assets/img/likes.png);
+  background-repeat: no-repeat;
+  padding-left: 43px;
+  padding-right: 6px;
+  padding-top: 3px;
+  padding-bottom: 2px;
+  margin-top: -10px;
+  float: right;
+  background-color: #fff!important;
+  border: solid #eaebef;
+  border-radius: 19px;
+}
+
+.fb-comments-comment-actions date {
+  font-size: 0.75em;
+  color: #90949c;
+  text-decoration: none;
+  cursor: pointer;
+  cursor: hand;
+}
+
+.fb-comments-comment-actions date:hover {
+  text-decoration: underline;
+}
+
+.fb-comments-loadmore {
+  background: #4080ff!important;
+  border: 1px solid #4080ff!important;
+  border-radius: 3px;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 14px;
+  padding: 0.875em;
+  text-shadow: none;
+  width: 100%;
+  font-weight: 700;
+  cursor: hand;
+  cursor: pointer;
+}
+
+.fb-reply-input {
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  width: 100%;
+  padding: 5px 7.5px;
+  font-size: 0.75em;
+  color: #000;
+  outline: none;
+}
+
+.fb-reply-input:hover,
+.fb-reply-button:hover {
+  outline: none;
+}
+
+.fb-reply-button {
+  background: #4080ff!important;
+  border: 1px solid #4080ff!important;
+  border-radius: 3px;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 0.75em;
+  padding: 5px 7.5px;
+  text-shadow: none;
+  width: 100%;
+  font-weight: 700;
+  cursor: hand;
+  cursor: pointer;
+  outline: none;
+}
+
+.bbtn {
+  width: 100%;
+  max-width: 449px;
+}
+
+@media (max-width: 768px) {
+  .video-player {
+    margin-top: 0 !important;
+  }
+}
+
+    header {
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    h1 {
+      font-size: clamp(1.5em, 1em + 3vw, 2.5em);
+      text-transform: uppercase bold;
+      font-family: 'Montserrat', sans-serif;
+    }
+    .a-btn {
+      text-decoration: none;
+      -webkit-font-smoothing: antialiased;
+      margin: 0;
+      border: 0; 
+      font: inherit; 
+      vertical-align: baseline;
+      color: #2e82bc; 
+      outline: 0; 
+      line-height: 1; 
+      text-align: center; 
+      position:relative!important; display: inline-block!important;
+      border-style: solid; 
+      width: 100%; padding-left: 0!important; padding-right: 0!important; 
+      margin-bottom: 10px; 
+      padding: 22px 44px; border-color: #ff5535; border-width: 0px; 
+      border-radius: 6px; 
+      background: linear-gradient(to bottom, #ff6600 0%, #ff5535 100%); 
+      box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.5); 
+      text-decoration: none!important;
+    }
+    .span-btn {
+      text-decoration: none;
+      -webkit-font-smoothing: antialiased; 
+      text-align: center;
+      margin: 0; 
+      border: 0; 
+      font: inherit;
+      vertical-align: baseline;
+      display: block; 
+      position: relative; 
+      z-index: 1; 
+      padding: 0 15px; 
+      white-space: normal; 
+      font-size: 25px;
+      color: #ffffff; 
+      font-family: Oswald; 
+      font-weight: bold; 
+      text-shadow: #000000 0px 1px 0px;
+      text-decoration: none;
+    }
+    .span-btn2 {
+      -webkit-font-smoothing: antialiased; 
+      text-align: center;
+      padding: 0; border: 0;
+      font: inherit; 
+      vertical-align: baseline; 
+      display: block; 
+      position: relative;
+      z-index: 1; 
+      margin: .2em 0 -.5em; 
+      font-size: 15px; 
+      color: #f5e051; 
+      font-family: Cabin; 
+      font-weight: bold; 
+      font-style: italic;
+      text-shadow: #000000 0px 1px 0px;
+    }
+    .comment {
+      display: block; 
+      padding: 10px 0; 
+      line-height: 20px;
+    }
+    .span {
+      color: #365899; 
+      font-weight: bold;
+    }
+    .answer {
+      color: #444; 
+      -webkit-font-smoothing: antialiased;
+      margin: 0; 
+      padding: 0; 
+      border: 0; 
+      font: inherit; 
+      vertical-align: baseline; 
+      display: block; 
+      padding-top: 10px; 
+      line-height: 20px;
+      padding-left: 9px; 
+      border-left: 1px solid #E9EBEE; margin-left: 50px; padding-bottom: 0;
+    }
+    .classeNova {
+      color: #444; 
+      -webkit-font-smoothing: antialiased; 
+      margin: 0; 
+      padding: 0; 
+      border: 0; 
+      font: inherit; 
+      vertical-align: baseline;
+      font-family: Arial; 
+      background-color:
+      #F6F7F9!important;
+      font-size: 14px; 
+      padding-top: 20px;      
+    }
+    .paragrafo {
+      color: #444; 
+      font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+      line-height: 1.5em; 
+      margin: 0;
+      margin-left: 60px; 
+      margin-bottom: 0px;
+    }
+    .like {
+      font-size: 11px; color: #90949c;
+    }
+    .twenty1 {
+      font-weight: 700; 
+      border-bottom: 1px solid #E9EBEE; 
+      display: block; 
+      padding-bottom: 6px;
+    }
+    .imgComment {
+      width: 60px; 
+      height: 50px; 
+      float: left; 
+      padding-right: 10px;
+    }
+    .hide {
+      display: none;
+    }
+    .pirataria h3 {
+      text-transform: uppercase;
+      font-size: 15px;
+      letter-spacing: 5px;
+    }
+    .pirataria b{
+      color: #FFC400;
+    }
+    .pirataria {
+      font-size: 12px;
+      text-align: justify;
+    }
+    footer {
+      background-color: black;
+      padding-top: 25px;
+      padding-bottom: 25px;
+      color: white;
+    }
+    .cpy {
+      font-size: 12px;
+      margin: 37px 0px 20px 0px;
+    }
+    .links a {
+      font-size: 12px;
+      color: white;
+    }
+    .lucas{
+      font-size: 50px;
+      color: #020201;
+      text-shadow: 2px 2px 2px white;
+    }
+  </style>
+</head>
+<body>
+  <section class="comments py-4">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-12">
+          <div class="fb-comments" style="margin-top: 5px;">
+            <div class="fb-comments-header">
+              <span>32 comentários</span>
+            </div>
+            <div class="fb-comments-wrapper" id="1">
+              <table class="fb-comments-comment">
+                <tbody>
+                  <tr>
+                    <td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" 
+                        src="https://kitsecamuito.online/assets/img/1.jpeg"  width="48" height="48" alt="imagem 1"></td>
+                   
+                  </tr>
+                  <tr>
+                    <td class="fb-comments-comment-text">
+  
+                        <font class="fb-comments-comment-name">
+                          <name>Emilia Yager</name>
+                        </font>
+                        <br/>
+                        Adorei, Recomendo!! Muito fácil o método Percebi melhoras significativas em poucos dias, em pouco tempo já da pra perceber a diferença. Estou indicando pra todas minhas amigas. 😍😍😍 </td>
+                  </tr>
+                  <tr>
+                    <td class="fb-comments-comment-actions">
+                      <like>Curtir</like>
+                      ·
+                      <reply>Responder</reply>
+                      ·
+                      <likes>31</likes>
+                      
+                      <date>27 min</date>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="fb-comments-reply-wrapper" id="2">
+              <table class="fb-comments-comment">
+                <tbody>
+                  <tr>
+                    <td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="48" height="48" alt="imagem 2"
+                        src="https://kitsecamuito.online/assets/img/2.jpeg"></td>
+                   
+                  </tr>
+                  <tr>
+                    <td class="fb-comments-comment-text">
+                      <font class="fb-comments-comment-name">
+                        <name>Marisa Moreira</name>
+                      </font>
+                      <br/> 
+                      <name class="mark-comments">Emilia Yager</name> Serio??funciona msmmm??
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="fb-comments-comment-actions">
+                      <like>Curtir</like>
+                      ·
+                      <reply>Responder</reply>
+                      ·
+                      <likes>2</likes>
+                      
+                      <date>10 min</date>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="fb-comments-reply-wrapper" id="3">
+              <table class="fb-comments-comment">
+                <tbody>
+                  <tr>
+                    <td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="48" height="48" alt="imagem3"
+                        src="https://kitsecamuito.online/assets/img/1.jpeg"></td>
+                    
+                  </tr>
+                  <tr>
+                    <td class="fb-comments-comment-text">
+                      <font class="fb-comments-comment-name">
+                        <name>Emilia Yager</name>
+                      </font>
+                      <br/>
+                      <name class="mark-comments">Marisa Moreira</name> Funciona sim! Munhas varizes ja sumiram quase todas!!
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="fb-comments-comment-actions">
+                      <like>Curtir</like>
+                      ·
+                      <reply>Responder</reply>
+                      ·
+                      <likes>3</likes>
+                      
+                      <date>1 min</date>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="fb-comments-wrapper" id="4">
+              <table class="fb-comments-comment">
+                <tbody>
+                  <tr>
+                    <td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="48" height="48" alt="imagem de perfil"
+                        src="https://kitsecamuito.online/assets/img/3.jpeg"></td>
+                   
+                  </tr>
+                  <tr>
+                    <td class="fb-comments-comment-text">
+                      <font class="fb-comments-comment-name">
+                        <name>Juliana Aparecida</name>
+                      </font>
+                      <br/>
+                      Comprei hoje e daqui uns tempos volto pra falar se é real mesmo</td>
+                  </tr>
+                  <tr>
+                    <td class="fb-comments-comment-actions">
+                      <like>Curtir</like>
+                      ·
+                      <reply>Responder</reply>
+                      ·
+                      <likes>27</likes>
+                      
+                      <date>53 min</date>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="fb-comments-reply-wrapper" id="5">
+              <table class="fb-comments-comment">
+                <tbody>
+                  <tr>
+                    <td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="48" height="48" alt="imagem de perfil"
+                        src="https://kitsecamuito.online/assets/img/4.jpeg"></td>
+                  
+                  </tr>
+                  <tr>
+                    <td class="fb-comments-comment-text">
+                      <font class="fb-comments-comment-name">
+                        <name>Rose Amaral</name>
+                      </font>
+                      <br/>
+                     <name class="mark-comments">Juliana Aparecida</name> é bom mesmo? em quanto tempo você viu melhora?
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="fb-comments-comment-actions">
+                      <like>Curtir</like>
+                      ·
+                      <reply>Responder</reply>
+                      ·
+                      <likes>5</likes>
+                      
+                      <date>42 min</date>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="fb-comments-reply-wrapper" id="6">
+              <table class="fb-comments-comment">
+                <tbody>
+                  <tr>
+                    <td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="48" height="48" alt="imagem de perfil"
+                        src="https://kitsecamuito.online/assets/img/3.jpeg"></td>
+                   
+                  </tr>
+                  <tr>
+                    <td class="fb-comments-comment-text">
+
+                      <font class="fb-comments-comment-name">
+                        <name>Juliana Aparecida</name>
+                      </font>
+                      <br/>
+
+                      <name class="mark-comments">  
+                        Rose Amaral </name> Sim, já estou percebendo que está melhorando aos poucos pode comprar que vale </td>
+                  </tr>
+                  <tr>
+                    <td class="fb-comments-comment-actions">
+                      <like>Curtir</like>
+                      ·
+                      <reply>Responder</reply>
+                      ·
+                      <likes>7</likes>
+                      
+                      <date>33 min</date>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+        
+            <div class="fb-comments-wrapper" id="10">
+              <table class="fb-comments-comment">
+                <tbody>
+                  <tr>
+                    <td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="48" height="48" alt="imagem de perfil"
+                        src="https://kitsecamuito.online/assets/img/5.jpeg"></td>
+                   
+                  </tr>
+                  <tr>
+                    <td class="fb-comments-comment-text">
+                      <font class="fb-comments-comment-name">
+                        <name>Viviane Lulu </name>
+                      </font>
+                      <br/>
+                      Só digo uma coisa, podem ir sem medo!!! realmente funciona e muito.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="fb-comments-comment-actions">
+                      <like>Curtir</like>
+                      ·
+                      <reply>Responder</reply>
+                      ·
+                      <likes>63</likes>
+                      
+                      <date>2 h</date>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="fb-comments-wrapper" id="11">
+              <table class="fb-comments-comment">
+                <tbody>
+                  <tr>
+                    <td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="48" height="48" alt="imagem de perfil"
+                        src="https://kitsecamuito.online/assets/img/6.jpeg"></td>
+                 
+                  </tr>
+                  <tr>
+                    <td class="fb-comments-comment-text">
+                      <font class="fb-comments-comment-name">
+                        <name>Mônica Tavares</name>
+                        <br/>
+                      </font>
+                      Estava procurando uma forma de reduzir as varizes que estava com muita vergonha de ir na praia desse jeito e finalmente depois de tanto tempo consegui achar algo que me ajudou. muito obrigadoooo </td>
+                  </tr>
+                  <tr>
+                    <td class="fb-comments-comment-actions">
+                      <like>Curtir</like>
+                      ·
+                      <reply>Responder</reply>
+                      ·
+                      <likes>11</likes>
+                      
+                      <date>3 h</date>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="fb-comments-wrapper" id="12">
+                <table class="fb-comments-comment">
+                  <tbody>
+                    <tr>
+                      <td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="48" height="48" alt="imagem perfil"
+                          src="https://kitsecamuito.online/assets/img/7.jpeg"></td>
+                   
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-text">
+                        <font class="fb-comments-comment-name">
+                          <name>Julia Fernandes</name>
+                        </font>
+                        <br/>
+                        Vou comprar!! Pelos comentários aqui todo mundo tá conseguindo melhorar, dps aviso vcs galera!
+
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="fb-comments-comment-actions">
+                        <like>Curtir</like>
+                        ·
+                        <reply>Responder</reply>
+                        ·
+                        <likes>62</likes>
+                        <date>3 h</date>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+            </div>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <script>
+  function showBtn1 () {
+      document.getElementById("btn1").classList.remove("hide")
+    }
+    
+    
+  function loadMore() {
+    $('#more').show()
+    $('.fb-comments-loadmore').hide().remove()
+}
+$(document).ready(function() {
+    $('date').each(function() {
+        if ($(this).attr('data-date-minus')) {
+            $(this).html(dateMinus($(this).attr('data-date-minus')))
+        }
+    })
+})
+
+function dateMinus(what) {
+    var today = Date.now()
+    var nw = today - what * 10000
+    var newd = new Date()
+    newd.setTime(nw)
+    var mthName = ['Janeiro', 'Fevereiro', 'MarÃ§o', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro']
+    var mthNm = mthName[newd.getMonth()]
+    return (newd.getDate() +
+        ' de ' +
+        mthNm +
+        ' de ' +
+        newd.getFullYear() +
+        ' ' +
+        newd.getHours() +
+        ':' +
+        round(newd.getMinutes()))
+}
+
+function round(what) {
+    if (what < 10) {
+        return '0' + what
+    } else {
+        return what
+    }
+}
+$('like').on('click', function() {
+    if ($(this).hasClass('liked')) {
+        $(this).parents('.fb-comments-wrapper, .fb-comments-reply-wrapper').find('likes').text(parseInt($(this).parents('.fb-comments-wrapper, .fb-comments-reply-wrapper').find('likes').text()) - 1)
+        $(this).removeClass('liked')
+        $(this).text('Curtir')
+    } else {
+        $(this).parents('.fb-comments-wrapper, .fb-comments-reply-wrapper').find('likes').text(parseInt($(this).parents('.fb-comments-wrapper, .fb-comments-reply-wrapper').find('likes').text()) + 1)
+        $(this).addClass('liked')
+        $(this).text('Descurtir')
+    }
+})
+$('reply').on('click', function() {
+    if (fbobj != null) {
+        handleReply($(this).parents('.fb-comments-wrapper, .fb-comments-reply-wrapper').attr('id'))
+    } else {
+        logInWithFacebook(handleReply, $(this).parents('.fb-comments-wrapper, .fb-comments-reply-wrapper').attr('id'))
+    }
+})
+
+function handleReply(id) {
+    var text = ''
+    var obj = $('#' + id)
+    if (obj.hasClass('fb-comments-reply-wrapper')) {
+        text = '@' + obj.find('name').text()
+        obj = $('#' + id.split('-')[0])
+    }
+    obj.find('.row.reply-box').remove()
+    obj.append('<div class="row reply-box" id="reply-' +
+        obj.attr('id') +
+        '"><div class="col-xs-10"><input type="text" value="' +
+        text +
+        '" placeholder="AÃ±ade una respuesta..." class="fb-reply-input" /></div><div class="col-xs-2"><button class="fb-reply-button" onclick="javascript:postReply(' +
+        obj.attr('id') +
+        ');">Responder</button></div></div>')
+}
+
+function postReply(id) {
+    var obj = $('#reply-' + id)
+    if (obj && obj.find('.fb-reply-input').val()) {
+        var date = new Date()
+        var fbreply = {
+            forid: id,
+            date: date,
+            text: obj.find('.fb-reply-input').val()
+        }
+        fbreplies.push(fbreply)
+        var replyc = reply.clone()
+        replyc.attr('id', id + '-' + Math.floor(Math.random() * 100 + 10))
+        replyc.find('name').text(fbobj.name)
+        replyc.find('.fb-comments-comment-img').find('img').attr('src', fbobj.pictureURL)
+        replyc.find('.fb-comments-comment-text').text(obj.find('.fb-reply-input').val())
+        replyc.find('date').each(function() {
+            if ($(this).attr('data-date-minus')) {
+                $(this).html(dateMinus($(this).attr('data-date-minus')))
+            }
+        })
+        $('#' + id).after(replyc)
+        obj.remove()
+        var today = new Date()
+        today.setDate(today.getFullYear() + 1)
+        setCookie('fbreplies', JSON.stringify(fbreplies), today)
+    }
+}
+
+</script>
+</body>
+</html>     </div>
+                </div>
+                    </div>
+        </div>
+                            </div>
+        </section>
