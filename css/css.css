@@ -1,0 +1,619 @@
+/*class-1*/
+*{margin:0;padding:0;}/*RESETA O MARGIN E PADDING EM QUALQUER NAVEGADOR*/
+@font-face{
+	font-family: nunito;
+	src: url("../../api/fontes/Nunito-Light.ttf");
+}
+@font-face{
+	font-family: nunitoregular;
+	src: url("../../api/fontes/Nunito-Regular.ttf");
+}
+@font-face{
+	font-family: nunitomedium;
+	src: url("../../api/fontes/Nunito-Medium.ttf");
+}
+@font-face{
+	font-family: nunitosemibold;
+	src: url("../../api/fontes/Nunito-SemiBold.ttf");
+}
+@font-face{
+	font-family: nunitobold;
+	src: url("../../api/fontes/Nunito-Bold.ttf");
+}
+@font-face{
+	font-family: nunitoblack;
+	src: url("../../api/fontes/Nunito-Black.ttf");
+}
+@font-face{
+	font-family: nunitoextrabold;
+	src: url("../../api/fontes/Nunito-ExtraBold.ttf");
+}
+
+/* width */
+::-webkit-scrollbar{
+  width: 0px;
+}
+
+
+/*class-6*/
+html{
+	-webkit-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+	width:100vw;
+}
+
+/*class-7*/
+body{
+	width:100vw;
+	margin:0;
+	padding:0;
+	background-color:#fff;
+	font-family:Tahoma,verdana,Segoe,sans-serif; 
+}
+/*class-8*/
+#campo-fixo-comprar{
+	display:block;
+	position:fixed;
+	width:101vw;
+	height:170px;
+	background-color:blue;
+	z-index:10;
+	margin-top:92vh;
+}
+
+#id-menu{
+	display:none;
+	position:absolute;
+	z-index:6;
+}
+#menu{
+	width:90%;
+	background-color:white;
+	z-index:10;
+}
+	#menu #menu-campo-1{
+		background-color:#fff;
+	}
+
+/*class-9*/
+#div-1-header{
+	display:block;
+	background-color:#f7f7f7;
+	padding-top:2.2vmin;
+	padding-bottom:2.8vmin;
+	height:100%;
+	width:100vw;
+}
+	#div-1-header-menu{
+		display:inline-block;
+		margin-left:2vw;
+	}
+		#div-1-header-botao{
+			padding: 20px;
+		}
+	#div-1-header-logo-da-tela{
+		display:inline-block;
+		
+	}
+		header img{
+			border:0;
+		}
+		.navbar-logo{
+			width:300px;
+		}
+	#div-1-header-botao-pesquisar{
+		display:inline-block;
+		padding:0vh 0vh 0vh 0vh;
+		
+	}
+	#div-1-header-botao-favoritos{
+		display:inline-block;
+	}
+	#div-1-header-botao-caminhao{
+		display:inline-block;
+	}
+	#div-1-header-area-de-pesquisa{
+		display:none;
+		margin-top:15px;
+		margin-left:4vw;
+		border:solid 0px red;
+	}
+		#div-1-header-input-pesquisa{
+			height:120px;
+			width:75%;
+			border:solid 0px grey;
+			border-radius:5px 0px 0px 5px;
+			outline:0;
+			font-size:3vw;
+			padding-left:3vw;
+		}
+		#div-1-header-area-de-pesquisa button{
+			background-color:#195897;
+			border:solid 0px grey;
+			border-radius:0px 5px 5px 0px;
+			width:16vw;
+			height:122px;
+			margin-top:-1px;
+		}
+	
+#section1{
+background-image: linear-gradient(rgba(220,220,220,0.5) 0.2vh,white 0vh);
+margin-left:2%;
+	width:96%;
+}
+	#div-1-section1{	
+		background-color:#f7f7f7;
+		height:100px;
+		width:100%;
+		border-bottom:solid 1px rgba(0,0,0,0.2);
+		border-top:solid 1px rgba(0,0,0,0.2);
+	}
+		#div-1-section1-botao-voltar{
+			font-weight: bold;
+			font-size:3.5vw;
+			color: #195897;
+			width:50%;
+		}
+		#div-1-section1-botao-voltar img{
+			display:inline-block;
+			margin-left:2vw;
+			margin-top:35px;
+			width:16vw;
+		}
+/*class-10*/
+#div-2-main{
+	margin-left:2%;
+	width:96%;
+	background-color:white;
+}
+	#div-2-main #div-2-main-titulo{
+		border-radius:5px;
+		margin-left:3%;
+		padding-top:15px;
+		width:94%;
+		text-align:left;
+	}
+		#div-2-main #div-2-main-titulo h1{
+			color:#0033c6;
+			font-family:nunitobold;
+			font-size:4.7vw;
+		}
+
+	#div-2-main-cep-calcular{
+		display:flex;
+		margin-left:2%;
+		margin-top:10px;
+		width:96%;
+		text-align:left;
+		
+	}/*class-11*/
+		#div-2-main-cep-calcular #inputcep{
+			border:1px solid #a3adb3;
+			height:70px;
+			width:58vw;
+			font-size:3.5vw;
+			padding:3vw;
+		}
+		#div-2-main-cep-calcular #botao-calcular-frete{
+			background-color:#0033c6;
+			border:0;
+			padding:40px;
+			font-size:4vw;
+			font-family:nunitobold;
+			color:white;
+			-webkit-border-radius:10px;
+		} 
+	#div-2-main-usar-minha-localizaÃ§Ã£o{
+		width:100vw;
+	}
+		#div-2-main-usar-minha-localizaÃ§Ã£o #usar-minha-localizaÃ§Ã£o{
+			display:flex;
+			width:95vw;
+			text-align:left;
+			color:#333;
+			font-size:3.3vw;
+		}
+	
+/*class-12*/	#div-2-main-confira-as-regras{
+		text-align:center;
+		border-top:2px solid #e4ebf1;
+		border-bottom:2px solid #e4ebf1;
+		color:#0033c6;
+		font-size:4.3vw;
+		font-family:nunitobold;
+		padding:3vw;
+	}
+	
+
+
+
+
+
+
+
+#div-1-footer{
+	width:100%;
+	background-color:#f7f7f7;
+}
+/*class-13*/
+	#div-1-footer #div-1-footer-titulo1{
+		margin-left:2%;
+		width:96%;
+		text-align:left;
+		color:#0033c6;
+		font-size:4vw;
+	}
+	#div-1-footer #div-1-footer-texto1{
+		margin-left:2%;
+		width:96%;
+		text-align:left;
+		color:#707070;
+		font-size:4vw;
+	}
+	#div-1-footer #div-1-footer-botao-ligar-para{
+		margin-left:2%;
+		width:96%;
+		background-color:#0033c6;
+		height:125px;
+		border-radius:7px;
+		text-align:center;
+	} 
+	#div-1-footer #div-1-footer-texto2{
+		margin-left:2%;
+		width:96%;
+		text-align:left;
+		color:#707070;
+		font-size:3.2vw;
+		font-weight:200;
+		
+	}
+	#div-1-footer #div-1-footer-titulo2{
+		margin-left:2%;
+		width:96%;
+		text-align:left;
+		color:#0033c6;
+		font-size:4vw;
+	}
+/*class-14*/
+#div-2-footer{
+	margin-left:2%;
+	width:96%;
+} 
+	#div-2-footer #div-2-footer-texto{
+		margin-left:2%;
+		width:96%;
+		text-align:left;
+		color:#777;
+		font-size:3.3vw;
+		font-weight:200;
+	}
+
+/*GIF CARREGANDO CALCULAR FRETE*/
+@keyframes lds-rolling {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(360deg);
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@-webkit-keyframes lds-rolling {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(360deg);
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+.lds-rolling {
+  position: relative;
+}
+.lds-rolling div,
+.lds-rolling div:after {
+  position: absolute;
+  width: 62px;
+  height: 62px;
+  border: 5px solid #195897;
+  border-top:solid 4px #888;
+  border-radius: 50%;
+}
+
+.lds-rolling div {
+  -webkit-animation: lds-rolling 1s linear infinite;
+  animation: lds-rolling 1s linear infinite;
+	top:48%;
+  left: 50%;
+}
+.lds-rolling div:after {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.lds-rolling {
+  -webkit-transform: translate(-100px, -100px) scale(1) translate(100px, 100px);
+  transform: translate(-100px, -100px) scale(1) translate(100px, 100px);
+}
+#gif-carregando{
+	display:none;
+	width:157px;
+	background-color:#1381ce;
+	border:0;
+	padding:40px;
+	font-size:4vw;
+	font-family:nunitobold;
+	color:white;
+	
+}/*class-15*/
+
+
+#gif-carregando-1{
+	display:none;
+	width:93%;
+	background-color:#7ed38e;
+	border:0;
+	height:120px;
+	font-family:nunitobold;
+	color:white;
+	border-radius:5px;
+	
+}/*class-16*/
+#gif-carregando-2{
+	display:none;
+	margin-left:3%;width:94%;
+	background-color:#7ed38e;
+	border:0;
+	height:110px;
+	font-family:nunitobold;
+	color:white;
+	border-radius:5px;
+}
+
+#gif-carregando-3{
+	display:none;
+	width:40%;
+	background-color:#7ed38e;
+	border:0;
+	height:40px;
+	font-family:nunito;
+	color:white;
+	border-radius:5px;
+	
+}
+
+#gif-carregando-cc1{
+	display:none;
+	width:93%;
+	background-color:#7ed38e;
+	border:0;
+	height:120px;
+	font-family:nunitobold;
+	color:white;
+	border-radius:5px;
+	
+}
+#gif-carregando-cc2{
+	display:none;
+	width:93%;
+	background-color:#7ed38e;
+	border:0;
+	height:120px;
+	font-family:nunitobold;
+	color:white;
+	border-radius:5px;
+	
+}
+#gif-carregando-boleto{
+	display:none;
+	width:93%;
+	background-color:#7ed38e;
+	border:0;
+	height:120px;
+	font-family:nunitobold;
+	color:white;
+	border-radius:5px;
+	
+}
+/*class-17*/
+.lds-rolling-2 {
+  position: relative;
+}
+.lds-rolling-2 div,
+.lds-rolling-2 div:after {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  border: 4px solid #1381ce;
+  border-top:solid 4px #888;
+  border-radius: 50%;
+}
+.lds-rolling-2 div {
+  -webkit-animation: lds-rolling 1s linear infinite;
+  animation: lds-rolling 1s linear infinite;
+	top:48%;
+  left: 50%;
+}
+.lds-rolling-2 div:after {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.lds-rolling-2 {
+  -webkit-transform: translate(-100px, -100px) scale(1) translate(100px, 100px);
+  transform: translate(-100px, -100px) scale(1) translate(100px, 100px);
+}
+
+
+
+#gif-carregando-pv{
+	display:none;
+	width:100%;
+	background-color:#7ed38e;
+	border:0;
+	height:130px;
+	font-family:nunitobold;
+	color:white;
+	border-radius:5px;
+	
+}
+#gif-carregando-pv2{
+	display:none;
+	width:100%;
+	background-color:#7ed38e;
+	border:0;
+	height:50px;
+	font-family:nunitobold;
+	color:white;
+	border-radius:5px;
+	
+}
+/*class-18*/
+.lds-rolling-pv {
+  position: relative;
+}
+.lds-rolling-pv div,
+.lds-rolling-pv div:after {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  border: 4px solid #1381ce;
+  border-top:solid 4px #888;
+  border-radius: 50%;
+}
+.lds-rolling-pv div {
+  -webkit-animation: lds-rolling 1s linear infinite;
+  animation: lds-rolling 1s linear infinite;
+	top:48%;
+  left: 50%;
+}
+.lds-rolling-pv div:after {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.lds-rolling-pv {
+  -webkit-transform: translate(-100px, -100px) scale(1) translate(100px, 100px);
+  transform: translate(-100px, -100px) scale(1) translate(100px, 100px);
+}
+
+
+/*class-19*/
+.container {
+  display: block;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  opacity: 0;
+  cursor: pointer;
+}
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 44px;
+  width: 44px;
+  background-color: white;
+  border:solid 2px #1381ce;/*borda circular externa*/
+  border-radius: 50%;
+}
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+ 	top: 6px;
+	left: 6px;
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	background-color: #1381ce;/*circulo maciÃ§o(checked) dentro da borda circular*/
+}
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: white;
+}
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: white;
+}
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+
+/*class-20*/
+/*SLIDER ROUND*/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 120px;
+  height: 50px;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 70px;
+  width: 70px;
+  left: 0px;
+  bottom: -10px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+/*class-21*/
+input:checked + .slider {
+  background-color: #28b542;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #28b542;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(50px);
+  -ms-transform: translateX(50px);
+  transform: translateX(50px);
+}
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+input:hover{
+	outline:solid 2px #1381ce;
+}
+/*class-22*/
